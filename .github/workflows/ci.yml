@@ -1,0 +1,22 @@
+name: Spring Boot CI
+
+on:
+    push:
+        branches: ["master"]
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v3
+
+            - name: Set up Java
+              uses: actions/set-up-java@v3
+              with:
+                distribution: 'temurin'
+                java-version: '21'
+
+            - name: Build with Maven
+              run: mvn clean install

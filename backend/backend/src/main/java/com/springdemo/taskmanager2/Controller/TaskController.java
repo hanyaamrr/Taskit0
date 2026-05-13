@@ -166,6 +166,8 @@ public class TaskController {
 
         taskRepository.delete(task);
 
+        System.out.println("made changes!");
+
         return ResponseEntity.noContent().build();
     }
 

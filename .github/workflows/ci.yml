@@ -19,4 +19,5 @@ jobs:
                 java-version: '21'
 
             - name: Build with Maven
+              working-directory: backend
               run: mvn clean install

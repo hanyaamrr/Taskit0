@@ -29,13 +29,13 @@ jobs:
       run: npm run build
       working-directory: './frontend/taskito frontend'
 
-    - name: Deploy to Netlify
-      uses: nwtgck/actions-netlify@v3.0
-      with:
-        publish-dir: './frontend/taskito frontend/dist'
-        production-branch: master
-        production-deploy: true
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-      env:
-        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-        NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+    # - name: Deploy to Netlify
+    #   uses: nwtgck/actions-netlify@v3.0
+    #   with:
+    #     publish-dir: './frontend/taskito frontend/dist'
+    #     production-branch: master
+    #     production-deploy: true
+    #     github-token: ${{ secrets.GITHUB_TOKEN }}
+    #   env:
+    #     NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+    #     NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}

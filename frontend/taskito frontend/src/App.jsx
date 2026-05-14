@@ -217,7 +217,7 @@ function AuthPage({ isLogin, setIsLogin, formData, setFormData, error, handleAut
       <div className="bg-white rounded-2xl shadow-2xl w-full max-w-md overflow-hidden">
         <div className="p-8">
           <div className="text-center mb-8">
-            <h1 className="text-3xl font-bold text-gray-900">Secure Task 1</h1>
+            <h1 className="text-3xl font-bold text-gray-900">Secure Tasks</h1>
             <p className="text-gray-500 mt-2">AES Encrypted • JWT Auth</p>
           </div>
 
